@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+        <link rel="stylesheet" type="text/css" href="daohang.css" />
+        <link rel="stylesheet" type="text/css" href="../轮播/photo.css">
+<!--    时间线连接css-->
+    <link rel="stylesheet" type="text/css" href="timeline.css" />
+
+    <style type="text/css">
+        #name1{
+<!--            text-align:center;-->
+            font-size:x-large;
+        }
+        #video{
+            border-width:thin medium thick;
+            border-style:solid;
+            border-color:gray;
+            width: 46%;
+            height: 400px;
+            float:left;
+
+        }
+        #name2{
+            border:5px solid gray;
+            border-width:thin medium thick;
+            width: 46%;
+            height: 400px;
+            float: right;
+        }
+
+        #name3{
+            border:5px solid white;
+            border-width:thin medium thick;
+            width:500px;
+            float:left;
+        }
+
+        #name4{
+            border:5px solid white;
+            border-width:thin medium thick;
+            width:700px;
+            float:right;
+        }
+
+        .name1{
+            margin-left:10%;
+            margin-right:10%;
+            border: 1px solid white;
+        }
+        .name1 p{
+            float:left;
+        }
+        h2{
+             margin-left:9%;
+        }
+        .name2 {
+            margin-left:10%;
+            margin-right:10%;
+            border: 1px solid white;
+            background-color:silver;
+            height:100px;
+        }
+        .name2 p{
+            margin-left:5%;
+        }
+
+        #name5{
+            border:2px solid red;
+            width:50px;
+            height:20px;
+<!--            text-decoration:none;-->
+        }
+
+        .foot clearfix{
+
+        }
+    </style>
+</head>
+<body >
+
+<!--导航栏-->
+<div class="top">
+    <div class="menu">
+        <h1 class="logo"><img src="../图片/logo.png"></h1>
+        <ul class="nav">
+            <li><a href="1.html">首页</a></li>
+            <li><a href="../2/001.html">校庆视频</a> </li>
+            <li><a href="../3/001.html">校庆LOGO</a> </li>
+            <li><a href="../4/001.html">校庆公告</a> </li>
+            <li><a href="../5/001.html">七秩时光</a> </li>
+            <li><a href="../6/001.html">宣传口号</a> </li>
+            <li><a href="../入口/1.html">退出</a> </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!--图片轮播-->
+<div class="box">
+		<img id="change" src="../图片/图书馆1.jpg" alt="" width="100%"/>
+		<div id="imgText" class="text"></div>
+		<ul id="num" class="imgBottom">
+			<li class onClick="jump(0)" >1</li>
+			<li class onClick="jump(1)" >2</li>
+			<li class onClick="jump(2)" >3</li>
+			<li class onClick="jump(3)" >4</li>
+		</ul>
+		<a class="left" href="#" onclick="last();" ><</a>
+		<a class="right" href="#" onclick="next();" >></a>
+	</div>
+<!--轮播链接的js,在js中放了图片-->
+<script src="../轮播/photo.js"></script>
+
+
+<div >
+    <div id="name1" ><p style="font-size:x-large;font-family:宋体;width:700px;text-align:center"><strong><a href="../2/001.html" style="text-decoration:none;">校庆视频</a></strong></p></div>
+    <div id="video" style="text-align:center;">
+        <video src="../图片/校庆视频_Trim.mp4" width="700" height="400" controls="controls">
+        您的浏览器不支持video标签。
+    </video>
+    </div>
+</div>
+
+<div id="name2" style="overflow:scroll;background-color:red;color: rgb(255, 255, 0);">
+    <p style="text-align:center;line-height: 1.75em; font-family: 宋体;"><a href="../4/001.html" style="text-decoration:none;font-size:x-large"> 华北水利水电大学70周年校庆公告（第一号）<br/></a><hr/></p>
+    <div style="font-family:宋体;color: rgb(255, 255, 0);">
+        <p style="text-indent: 2em">嵩山北麓，黄河之畔；积蕴七秩，风华方遒。公元2021年金秋，中国共产党成立100周年之际，华北水利水电大学即将迎来建校70周年庆典。值此，谨向长期以来关心、支持学校建设与发展的各级领导、各界朋友和广大校友致以崇高的敬意和诚挚的感谢！</p>
+
+        <p style="text-indent: 2em">七十载栉风沐雨，薪火相传。1951年，华北水利水电大学的前身中央人民政府水利部水利学校，在首都北京诞生。作为新中国成立兴办的第一所水利学校，华北水利水电大学缘水而生、因水而存、籍水而兴，三易校址、四次搬迁，与民族共命运、与时代同呼吸、与水利水电事业同发展。学校始终以崇高的理想追求、深厚的历史积淀、独特的文化品格，在历史的长河中砥砺前行，历经中央人民政府水利部水利学校、北京水利水电学院、河北水利水电学院、华北水利水电学院等重要时期，2013年更名为华北水利水电大学。长期以来，学校积极投身国家水利水电事业和黄河流域生态保护治理，写下了华水人治水兴国的壮丽诗篇。</p>
+
+        <p style="text-indent: 2em">七十载与党同行，使命在肩。华北水利水电大学恪守为党育人、为国育才的初心使命，秉承“勤奋、严谨、求实、创新”的校训，坚持“育人为本、学以致用”的办学理念，坚守“情系水利、自强不息”的办学精神，铸就了“下得去，吃得苦，留得住，用得上”的毕业生优良品格，为党和国家培养了30多万名水利水电等专业技术与管理人才。学校紧紧围绕特色鲜明的高水平水利水电大学建设目标，全面贯彻党的教育方针，弘扬新时代水利精神，深入实施“四大战略”，坚持党建引领，以立德树人为根本任务，以学科建设为龙头，以教育教学为中心，以改革创新为动力，推动了综合实力和办学水平不断迈上新台阶，实现了河南省人民政府与水利部共建，入选河南省特色骨干大学和全国党建工作示范高校，成为“金砖国家大学联盟”创始成员和中方牵头单位，办学的美誉度和知名度不断提升。</p>
+
+        <p style="text-indent: 2em">七十载继往开来，再谱新篇。华北水利水电大学成于新中国创业的磨砺，兴于改革开放的春天，也将盛于中华民族伟大复兴的新时代。学校2018年党代会确定了“建成国内外有重要影响、特色鲜明的高水平水利水电大学”的奋斗目标，提出了实施“三步走”发展战略，为推进新时代学校事业高质量内涵式发展指明了方向。站在新的历史起点上，华北水利水电大学将以教育强国的情怀、人才报国的理念、科技兴国的担当、爱国奉献的精神、服务战略的格局，一步一个脚印奋力建设特色鲜明的高水平水利水电大学，为国家水利水电事业、黄河流域生态保护和高质量发展战略、区域经济社会发展作出新的更大贡献。</p>
+
+        <p style="text-indent: 2em">辛丑季秋，盛世如约，届时我们将诚邀海内外校友及关心支持华水发展的社会各界宾朋拨冗莅临，相聚华水，畅叙情谊，共谋远猷，同庆华诞。</p>
+
+        <p style="text-align:right">专此诚告，敬祈周知。</p>
+        <p style="text-align:right">华北水利水电大学</p>
+        <p style="text-align:right">2020年10月21号</p>
+    </div>
+</div>
+
+
+<!--时间线-->
+<div style="height:500px"> </div>
+<div><h1 style="text-align:center"> <a href="../5/001.html" style="text-decoration:none">历史时间线</a></h1></div>
+<div >
+
+    <div id="q2">中央人民政府水利部水利学校</div>
+    <div class="q">更名为水利部北京水利学校</div>
+    <div class="q">成立北京水利水电学院</div>
+    <div class="q">迁至河北省磁县岳城水库办学</div>
+    <div class="q">更名为河北水利水电学院</div>
+    <div class="q">迁至河北省邯郸市办学</div>
+    <div class="q">更名为华北水利水电学院</div>
+    <div class="q">迁至河南省郑州市办学</div>
+    <div class="q">整建制由水利部划转河南省管理</div>
+    <div class="q">签署共建华北水利水电学院战略协议</div>
+    <div class="q">更名为华北水利水电大学</div>
+
+      <div id="q1"></div>
+
+    <div id="q3">1951年</div>
+    <div class="Q">1954年</div>
+    <div class="Q">1958年</div>
+    <div class="Q">1969年</div>
+    <div class="Q">1971年</div>
+    <div class="Q">1977年</div>
+    <div class="Q">1978年</div>
+    <div class="Q">1990年</div>
+    <div class="Q">2000年</div>
+    <div class="Q">2009年</div>
+    <div class="Q">2013年</div>
+</div>
+
+<div style="height:100px"> </div>
+
+<div id="name3" style="text-align:center;">
+    <strong ><a href="../2/001.html" style="text-decoration:none;font-size:x-large;">校庆图标</a></strong>
+    <img src="../图片/华北水利水电大学70周年校庆标识（LOGO）.jpg" alt="" width="500px" height="500px">
+</div>
+
+<div id="name4">
+    <div class="name1" >
+        <p ><img src="../图片/wendang.jpg" > <h2><a href="../6/001.html" style="text-decoration:none"> 宣传口号</a></h2></p>
+        <hr/>
+    </div>
+    <div class="name2">
+        <p>上幅：七十年桃李芬芳 &nbsp; &nbsp;下幅：承前启后创辉煌</p>
+        <p>——2021-10-13</p>
+    </div>
+    <div class="name2">
+        <p>上幅：风雨同舟七十载 &nbsp; &nbsp;下幅：自强不息华水人</p>
+        <p>——2021-10-13</p>
+    </div>
+    <div class="name2">
+        <p>上幅：励精图治七十年 &nbsp; &nbsp;下幅：桃李芬芳满天下</p>
+        <p>——2021-10-13</p>
+    </div>
+    <div class="name2">
+        <p>上幅：忆往昔成绩卓著 下幅：看今朝再创辉煌</p>
+        <p>——2021-10-13</p>
+    </div>
+    <div class="name2">
+        <p>上幅：忆往昔恩师言传身教诲人不倦 下幅：看今朝母校桃李满园五湖四海</p>
+        <p>——2021-10-13</p>
+    </div>
+
+    <div style="float:right;margin-right:5%;" id="name5"><a  href="../6/001.html" onclick="next();" style="text-decoration:none"> &nbsp;&nbsp;&nbsp;&nbsp;>></a></div>
+
+</div>
+
+<div style="height:650px"> </div>
+ <div style="background-color:#015faf; text-align:center;height:200px;"> <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+     <div style="height:50px"> </div>
+     <ul style="color:white;letter-spacing:1pt">
+         <dl >
+             <dd>版权所有：201917205王明亮&nbsp;&nbsp;&nbsp;&nbsp;</dd>
+             <dd>组织制作：201917205王明亮&nbsp;&nbsp;|&nbsp;&nbsp;技术支持：也是201917205王明亮</dd>
+             <dd>花园校区地址：河南省郑州市北环路36号&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;邮编：450045</dd>
+             <dd>龙子湖校区地址：河南省郑州市金水东路136号 &nbsp;&nbsp;&nbsp;&nbsp;邮编：450046</dd>
+             <dd></dd>
+         </dl>
+     </ul>
+ </div>
+
+</body>
+</html>
